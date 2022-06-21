@@ -48,6 +48,7 @@ class Create_Controller extends BaseController{
 
     public function post(){
         if(!Session::get('id')) return [];
+        $array=[];
         $post_s = Post::orderBy('id','desc')->get();
         foreach($post_s as $row){
             $user=User::where('id',$row['Autore'])->first();

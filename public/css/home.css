@@ -92,10 +92,12 @@ header{
 }
 
 
-.No_data{
+.no_post{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: x-large;
+    background-color: blue;
+    z-index: 2 !important;
 }
 

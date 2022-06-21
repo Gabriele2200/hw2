@@ -52,6 +52,7 @@
         <article >
             <div class="post">
                 <h1>All Post</h1>
+                <div class='no_post'></div>
             </div>
         </article>
 

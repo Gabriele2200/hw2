@@ -2,7 +2,7 @@
 function onJsonRicerca(json) {
     console.log(json);
     console.log(json.length);
-    if (!json) {
+    if (!json.length) {
         document.querySelector("article").innerHTML = "";
         const post = document.querySelector("article");
         const notFound = document.createElement("div")
@@ -41,11 +41,12 @@ function onJsonRicerca(json) {
 function onJson(json) {
     console.log(json);
     console.log(json.length);
-    if (!json) {
+    if (!json.length) {
+        console.log('saxo');
         const post = document.querySelector(".post");
         const notFound = document.createElement("div");
         notFound.classList.add("No_data");
-        notFound.textContent = "No data.";
+        notFound.textContent = "Nessun post disponibile";
         post.appendChild(notFound);
     }
     else {
