@@ -12,8 +12,4 @@ class Post extends Model{
     
     protected $fillable= [ 'Autore', 'title','content'];
 
-    public function user(){
-        return $this->belongsTo('App\Models\User');
-    }
-
 }

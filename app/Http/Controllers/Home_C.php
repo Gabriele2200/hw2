@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Session;
 use App\Models\User;
 use App\Models\Post;
-use DB;
 
 use Illuminate\Routing\Controller as BaseController;
 
